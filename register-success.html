@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <!-- Подключаем стили шаблона -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Подключаем скрипт Google Custom Search Engine -->
+    <script async src="https://cse.google.com/cse.js?cx=d0f3460250bb24e21"></script>
+</head>
+<body>
+    <!-- Внедряем HTML шаблон -->
+    <div id="wrapper">
+        <!-- Здесь будет содержимое вашего сайта -->
+        <header>
+            <h1>Заголовок сайта</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Вставляем контент сюда -->
+            <div class="container">
+                <div class="center">
+                    <button onclick="goToPage(1)">Переход 1</button>
+                    <button onclick="goToPage(2)">Переход 2</button>
+                    <button onclick="goToPage(3)">Переход 3</button>
+                    <button onclick="goToPage(4)">Переход 4</button>
+                    <button onclick="goToPage(5)">Переход 5</button>
+                </div>
+                <img src="photo1.jpg" alt="Photo 1" class="photo" onerror="this.style.display='none'">
+                <div class="search-container">
+                    <!-- Здесь будет элемент поиска -->
+                    <div class="gcse-search"></div>
+                </div>
+                <img src="photo2.jpg" alt="Photo 2" class="photo" onerror="this.style.display='none'">
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Все права защищены</p>
+        </footer>
+    </div>
+    <!-- Подключаем скрипт для вашего функционала -->
+    <script src="script.js"></script>
+</body>
+</html>
